@@ -1,14 +1,19 @@
-# BEMSimpleLineGraph - Feature Branch
+# BEMSimpleLineGraph
+##Uberfeature Branch
 <p align="center"><img src="http://s29.postimg.org/57dn7ve3r/BEMSimple_Line_Graph_Main.png"/></p>	
 
 <p align="center">
 <b>BEMSimpleLineGraph</b> makes it easy to create and customize line graphs for iOS.
 </p>
 
-## Feature Branch Warning
-You are currently viewing the feature branch of this GitHub repository. The feature branch contains bleeding edge commits / features, otherwise known as **alpha or beta** features. Content in this branch may be unstable, bug-ridden, non-working, and undocumented. The sole purpose of this branch is to test and improve on new features that may or may not be included in future (stable) versions.
+## Uberfeature Branch Warning
+You are currently viewing the uberfeature branch of this GitHub repository. 
 
-It is not recommended that you use this branch in a production app of any kind. **For stable production ready code**, please refer to the [master branch](https://github.com/Boris-Em/BEMSimpleLineGraph/tree/master).
+The uberfeature branch is built using Xcode 6.0 beta, iOS 8 beta, and OS X Yosemite beta. The goal of this branch is to begin implementing new APIs and beta features from iOS 8 and OS X 10.10. Additionally, this branch is used to implement large breaking & major changes.
+
+This branch contains *super-duper* bleeding edge commits / features. Content in this branch *is* unstable, bug-ridden, non-working, and undocumented. The sole purpose of this branch is to test and create new features that may or may not be included in the feature branch.
+
+This branch is solely for experimentation and should **never** be used in a production app of any kind. **For stable production ready code**, please refer to the [master branch](https://github.com/Boris-Em/BEMSimpleLineGraph/tree/master). **For upcoming features and beta / alpha code**, please refer to the [feature branch](https://github.com/Boris-Em/BEMSimpleLineGraph/tree/feature).
 
 ## Table of Contents
 
@@ -37,9 +42,22 @@ It is not recommended that you use this branch in a production app of any kind. 
 Learn more about the BEMSimpleLineGraph project requirements, licensing, and contributions.
 
 ### Requirements
-- Requires iOS 6 or later. The sample project is optimized for iOS 7.
+- Requires iOS 8.0 beta, seed 2 or later. The sample project is optimized for iOS 8.
 - Requires Automatic Reference Counting (ARC).
 - Optimized for ARM64 Architecture
+
+Requires Xcode 6.0 beta, seed 2 for use in any iOS or OS X Project. Requires a minimum of iOS 8.0 beta, seed 2 as the deployment target. 
+
+| Current Build Target 	| Earliest Supported Build Target 	| Earliest Compatible Build Target 	|
+|:--------------------:	|:-------------------------------:	|:--------------------------------:	|
+|       iOS 8.0 seed 2        	|            iOS 8.0              	|             iOS 8.0              	|
+|       OS X 10.10 seed 2        	|            OS X 10.10 seed 1              	|            OS X 10.10 seed 1              	|
+|     Xcode 6.0 seed 2      	|          Xcode 6.0 seed 1            	|           Xcode 6.0 seed 1            	|
+|      LLVM 5.0        	|             LLVM 5.0            	|             LLVM 5.0             	|
+
+> REQUIREMENTS NOTE  
+*Supported* means that the library has been tested with this version. *Compatible* means that the library should work on this OS version (i.e. it doesn't rely on any unavailable SDK features) but is no longer being tested for compatibility and may require tweaking or bug fixes to run correctly.
+
 
 ### License
 See the [License](https://github.com/Boris-Em/BEMSimpleLineGraph/blob/master/LICENSE). You are free to make changes and use this in either personal or commercial projects. Attribution is not required, but it is appreciated. A little Thanks! (or something to that affect) would be much appreciated. If you use BEMSimpleLineGraph in your app, let us know.
