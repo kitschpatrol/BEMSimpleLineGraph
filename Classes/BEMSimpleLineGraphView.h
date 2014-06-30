@@ -26,7 +26,7 @@
 @protocol BEMSimpleLineGraphDataSource;
 
 /// Simple line graph / chart UIView subclass for iOS apps. Creates beautiful line graphs (without huge memory impacts) using QuartzCore.
-@interface BEMSimpleLineGraphView : UIView <UIGestureRecognizerDelegate>
+IB_DESIGNABLE @interface BEMSimpleLineGraphView : UIView <UIGestureRecognizerDelegate>
 
 
 
@@ -127,29 +127,29 @@
 
 
 /// The graph's label font used on various axis. This property may be privately overwritten, do not expect full functionality from this property.
-@property (strong, nonatomic) UIFont *labelFont;
+@property (strong, nonatomic) IBInspectable UIFont *labelFont;
 
 
 /// Time of the animation when the graph appears in seconds. Default value is 1.5.
-@property (nonatomic) CGFloat animationGraphEntranceTime;
+@property (nonatomic) IBInspectable CGFloat animationGraphEntranceTime;
 
 
 /// If set to YES, the graph will report the value of the closest point from the user current touch location. The 2 methods for touch event bellow should therefore be implemented. Default value is NO.
-@property (nonatomic) BOOL enableTouchReport;
+@property (nonatomic) IBInspectable BOOL enableTouchReport;
 
 
 /// If set to YES, a label will pop up on the graph when the user touches it. It will be displayed on top of the closest point from the user current touch location. Default value is NO.
-@property (nonatomic) BOOL enablePopUpReport;
+@property (nonatomic) IBInspectable BOOL enablePopUpReport;
 
 
 /// The way the graph is drawn, with or without bezier curved lines. Default value is NO.
-@property (nonatomic) BOOL enableBezierCurve;
+@property (nonatomic) IBInspectable BOOL enableBezierCurve;
 
 
 /** Show Y-Axis label on the side. Default value is NO.
  @see  autoScaleYAxis - When set YES, Y-Axis will show minimum, maximum and middle label only.
  @todo Could enhance further by specifying the position of Y-Axis, i.e. Left or Right of the view.  Also auto detection on label overlapping. */
-@property (nonatomic) BOOL enableYAxisLabel;
+@property (nonatomic) IBInspectable BOOL enableYAxisLabel;
 
 /** When set to YES, the points on the Y-axis will be set to all fit in the graph view. When set to NO, the points on the Y-axis will be set with their absolute value (which means that certain points might not be visible because they are outside of the view). Default value is YES. */
 @property (nonatomic) BOOL autoScaleYAxis;
@@ -177,31 +177,31 @@
 
 
 /// Color of the bottom part of the graph (between the line and the X-axis).
-@property (strong, nonatomic) UIColor *colorBottom;
+@property (strong, nonatomic) IBInspectable UIColor *colorBottom;
 
 
 /// Alpha of the bottom part of the graph (between the line and the X-axis).
-@property (nonatomic) CGFloat alphaBottom;
+@property (nonatomic) IBInspectable CGFloat alphaBottom;
 
 
 /// Color of the top part of the graph (between the line and the top of the view the graph is drawn in).
-@property (strong, nonatomic) UIColor *colorTop;
+@property (strong, nonatomic) IBInspectable UIColor *colorTop;
 
 
 /// Alpha of the top part of the graph (between the line and the top of the view the graph is drawn in).
-@property (nonatomic) CGFloat alphaTop;
+@property (nonatomic) IBInspectable CGFloat alphaTop;
 
 
 /// Color of the line of the graph.
-@property (strong, nonatomic) UIColor *colorLine;
+@property (strong, nonatomic) IBInspectable UIColor *colorLine;
 
 
 /// Alpha of the line of the graph.
-@property (nonatomic) CGFloat alphaLine;
+@property (nonatomic) IBInspectable CGFloat alphaLine;
 
 
 /// Width of the line of the graph. Default value is 1.0.
-@property (nonatomic) CGFloat widthLine;
+@property (nonatomic) IBInspectable CGFloat widthLine;
 
 
 /// The size of the circles that represent each point. Default is 10.0.
